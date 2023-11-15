@@ -22,5 +22,7 @@ function game(params) {
 
     }
 }
+//end game()
 
+window.confirm()//possible switch statement for options confirm need to be in if statement???
 
