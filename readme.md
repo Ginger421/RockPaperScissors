@@ -1,9 +1,14 @@
-RockPapaerScissors
+# RockPapaerScissors
 
-Description
+Repo:
+Deployed: 
 
-License
+## Description
 
-Usage
+## License
 
-Contact
+## Usage
+
+## Contact
+Github:
+Email: gingerowen0421@gmail.com
