@@ -1,10 +1,8 @@
 # RockPapaerScissors
-
+## Description
+This application is the game rock paper scissors. It was developed using HTML5, CSS3, and JavaScript.
 Repo:
 Deployed: 
-
-## Description
-
 ## License
 
 ## Usage
