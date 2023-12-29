@@ -23,6 +23,10 @@ function game(params) {
     }
 }
 //end game()
+//prompt is for choice r p s
+//alert is for score
+alert(loses, wins)
+//confirm is for do you wnat to play has ok (true) or cancel
 
 window.confirm()//possible switch statement for options confirm need to be in if statement???
 
