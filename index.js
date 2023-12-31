@@ -7,9 +7,18 @@ const randomChoice =  choices[Math.floor(Math.random()*choices.length)]
 
 console.log(randomChoice);
 
-window.addEventListener("load", confirm("Would you like to play?"))
+window.onload = (Event) => {
+    confirm("Would you like to play?")
+    if (confirm == true) {
+        promptCode()
+    } else {
+        "You chose not to play. Hvae a nice day!"
+    }
+}
 
-
+function promptCode () {
+    prompt("please enter r p s")
+}
 // function game(params) {
 //     if (player === randomChoice) {
 //         return "draw"
