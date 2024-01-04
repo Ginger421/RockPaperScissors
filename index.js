@@ -3,29 +3,44 @@ const loses = 0;
 
 const choices = ["Rock", "Paper", "Scissors"];
 
+const player = ["r", "p", "s"]
+
 const randomChoice =  choices[Math.floor(Math.random()*choices.length)]
 
 console.log(randomChoice);
 
 window.onload = (Event) => {
-    confirm("Would you like to play?")
-    if (confirm == true) {
-        promptCode()
-    } else {
-        "You chose not to play. Hvae a nice day!"
-    }
-}
+    let text;
+    if (confirm("Would you like to play?") == true) {
+        promptCode();
+    }   else {
+        text = "You chose not to play!"
+    } //end ifelse
+} //end onload
 
 function promptCode () {
-    prompt("please enter r p s")
+    prompt("please enter r p s");
+    if (player === randomChoice) {
+                return "draw"
+            } 
+            if (player === "r" && randomChoice === "Scissors" || //for player wins
+                player === "s" && randomChoice === "Paper" ||
+                player === "p" && randomChoice === "Rock") {
+                    wins =+ 1
+                return "Win!"
+            } else {
+                //loses =-1
+                return "You lose:-("
+        
+            }
 }
 // function game(params) {
 //     if (player === randomChoice) {
 //         return "draw"
 //     } 
-//     if (player === "Rock" && randomChoice === "Scissors" || //for player wins
-//         player === "Scissors" && randomChoice === "Paper" ||
-//         player === "Paper" && randomChoice === "Rock") {
+//     if (player === "r" && randomChoice === "Scissors" || //for player wins
+//         player === "s" && randomChoice === "Paper" ||
+//         player === "p" && randomChoice === "Rock") {
 //             wins =+ 1
 //         return "Win!"
 //     } else {
