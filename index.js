@@ -1,7 +1,6 @@
 const wins = 0;
-const loses = 0;
-
-const choices = ["Rock", "Paper", "Scissors"];
+let loses = 0;
+let choices = ["Rock", "Paper", "Scissors"];
 
 const player = ["r", "p", "s"]
 
@@ -26,13 +25,15 @@ function promptCode () {
             if (player === "r" && randomChoice === "Scissors" || //for player wins
                 player === "s" && randomChoice === "Paper" ||
                 player === "p" && randomChoice === "Rock") {
-                    wins =+ 1
+                    wins = wins=+1;
                 return "Win!"
             } else {
-                //loses =-1
+                loses = loses =+ 1;
                 return "You lose:-("
         
             }
+            console.log(wins);
+            console.log(loses);
 }
 // function game(params) {
 //     if (player === randomChoice) {
