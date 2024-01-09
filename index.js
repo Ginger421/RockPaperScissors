@@ -9,7 +9,6 @@ console.log(randomChoice);
 window.onload = (Event) => {
     let text;
     if (confirm("Would you like to play?") == true) {
-        //promptCode();
         game();
     }   else {
         text = "You chose not to play!"
