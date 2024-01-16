@@ -9,14 +9,16 @@ console.log(randomChoice);
 window.onload = (Event) => {
     let text;
     if (confirm("Would you like to play?") == true) {
-        game();
+        let game = prompt("Please enter r p or s" , "");
+        game;
     }   else {
         text = "You chose not to play!"
     } //end ifelse
+
+    console.log(game);
+
 } //end onload
 
-let game = prompt("Please enter r p or s" , "");
-console.log(game);
 
 
 // function promptCode () {
