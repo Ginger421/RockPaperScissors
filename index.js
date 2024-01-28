@@ -4,15 +4,13 @@ const player = ["r", "p", "s"]
 
 const randomChoice =  choices[Math.floor(Math.random()*choices.length)]
 
-console.log(randomChoice);
-
 window.onload = (Event) => {
     let text;
     if (confirm("Would you like to play?") == true) {
         let game = prompt("Please enter r p or s" , "");
         game;
     }   else {
-        text = "You chose not to play!"
+        return text = "You chose not to play!"
     } //end ifelse
 
     console.log(game);
