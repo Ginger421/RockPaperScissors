@@ -16,28 +16,6 @@ window.onload = (Event) => {
 } //end onload
 
 
-
-// function promptCode () {
-//     let wins = 0;
-//     let loses = 0;
-//     if (player === randomChoice) {
-//                 return "draw"
-//             } 
-//             if (player === "r" && randomChoice === "s" || //for player wins
-//                 player === "s" && randomChoice === "p" ||
-//                 player === "p" && randomChoice === "r") {
-//                     wins = wins=+1;
-//                     console.log(wins);
-//                 return "Win!"
-//             } else {
-//                 loses = loses =+ 1;
-//                 return "You lose:-("
-//                 console.log(loses);
-        
-//             }
-
-// }
-
 function game() {  
 
 let wins = 0;
@@ -63,7 +41,7 @@ switch (player) {
         alert(`You loose!
                 losses:${loses}`)
         break;
-        
+
     default:
         alert("That is not a valid selection. Please enter r p or s if you would like to play");
         break;
