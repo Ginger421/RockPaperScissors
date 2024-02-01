@@ -1,6 +1,10 @@
 const choices = ["r", "p", "s"];
-
 const randomChoice =  choices[Math.floor(Math.random()*choices.length)]
+
+let wins = 0;
+let losses = 0;
+let ties = 0;
+
 start();
 
 function start() {
@@ -11,12 +15,12 @@ function start() {
         game(player);
         function game(player) {
         console.log(player);
-            let wins = 0;
-            let loses = 0;
             switch (true) {
             
                 case player === randomChoice:
-                    alert("Draw!");
+                    ties += 1
+                    alert(`Tie! 
+                    wins:${wins} losses:${losses} ties:${ties}`);
                     if (confirm("play again?") == true) {
                         callGame();
                     } else {
@@ -25,11 +29,11 @@ function start() {
                     break;
             
                 case player === "r" && randomChoice === "s":
-                case player === "ss" && randomChoice === "p":
+                case player === "s" && randomChoice === "p":
                 case player === "p" && randomChoice === "r":
-                    wins = wins + 1 
+                    wins += 1
                     alert(`You win! 
-                            wins:${wins}`);
+                    wins:${wins} losses:${losses} ties:${ties}`);
                     if (confirm("play again?") == true) {
                         callGame();
                     } else {
@@ -40,9 +44,9 @@ function start() {
                 case player === "s" && randomChoice === "r":
                 case player === "p" && randomChoice === "s":
                 case player === "r" && randomChoice === "p":
-                    loses = loses + 1;
+                    losses += 1
                     alert(`You loose!
-                            losses:${loses}`)
+                    wins:${wins} losses:${losses} ties:${ties}`)
                     if (confirm("play again?") == true) {
                         callGame();
                     } else {
@@ -52,7 +56,7 @@ function start() {
             
                 default:
                     alert("That is not a valid selection. Please enter r p or s if you would like to play");
-                    
+                    callGame();
                     break;
             } //end switch
         } // end game()
