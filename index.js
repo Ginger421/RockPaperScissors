@@ -16,6 +16,15 @@ function start() {
         function game(player) {
         console.log(player);
             switch (true) {
+
+                case player !== "r" || "p" || "s":
+                    alert("That was not a valid entry!")
+                    if (confirm("play again?") == true) {
+                        callGame();
+                    } else {
+                        alert("Have a terrific day!");
+                    }; //end ifelse to confirm play again;
+                    break;
             
                 case player === randomChoice:
                     ties += 1
@@ -55,8 +64,8 @@ function start() {
                     break;
             
                 default:
-                    alert("That is not a valid selection. Please enter r p or s if you would like to play");
-                    callGame();
+                    alert("Have a great day!");
+                    //callGame();
                     break;
             } //end switch
         } // end game()
