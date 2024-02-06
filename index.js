@@ -54,9 +54,9 @@ function start() {
                         }; //end ifelse to confirm play again;
                     break;
                 
-                case player != "r":
-                case player != "s":
-                case player != "p":
+                case player !== "r":
+                case player !== "s":
+                case player !== "p":
                     alert("That was not a valid entry!")
                     if (confirm("play again?") == true) {
                         callGame();
@@ -64,6 +64,10 @@ function start() {
                         alert("Have a terrific day!");
                     }; //end ifelse to confirm play again;
                     break;
+                
+                case player !== true:
+                    alert("Have a great day :-)") 
+                    break;   
             
                 default:
                     alert("Have a great day!");
