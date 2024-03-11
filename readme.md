@@ -1,7 +1,7 @@
 # RockPapaerScissors
 
 ## Description
-This application is the game rock paper scissors. It was developed using HTML5, CSS3, and JavaScript, and deployed on GitHub. When the user loads the page, an onload event calls , If the user chooses cancel then a message pops up. If the user chooses OK, then a prompt is called and the user is asked to enter  r p or s.
+This application is the game rock paper scissors. It was developed using HTML5, CSS3, and JavaScript, and deployed on GitHub. When the user loads the page, an onload event calls a prompt, If the user chooses cancel then a message pops up. If the user chooses OK, then a prompt is called and the user is asked to enter  r p or s.
 Repo: https://github.com/Ginger421/RockPaperScissors
 Deployed: https://ginger421.github.io/RockPaperScissors/
 
