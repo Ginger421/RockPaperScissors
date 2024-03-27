@@ -5,6 +5,12 @@ This application is the game rock paper scissors. It was developed using HTML5, 
 Repo: https://github.com/Ginger421/RockPaperScissors
 Deployed: https://ginger421.github.io/RockPaperScissors/
 
+<img width="956" alt="image" src="https://github.com/Ginger421/RockPaperScissors/assets/101539821/873f8f79-8c84-40e3-b3d1-924c9b2ecfa2">
+
+<img width="959" alt="image" src="https://github.com/Ginger421/RockPaperScissors/assets/101539821/fcab31f5-4e74-4fe8-964f-9064169573ef">
+
+
+
 ## License
 ![image](https://user-images.githubusercontent.com/101539821/195421205-75d9058a-9528-4224-8a53-491b47f330e9.png)
 
